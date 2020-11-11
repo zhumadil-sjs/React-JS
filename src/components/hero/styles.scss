@@ -4,8 +4,8 @@
   background-size: cover;
   min-height: 100vh;
   &__content {
-    padding-top: 100px;
-    padding-left: 30px;
+    padding-top: vh(100);
+    padding-left: vh(30);
   }
   &__product {
     display: flex;
