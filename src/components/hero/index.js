@@ -1,0 +1,72 @@
+import "./styles.scss";
+import shampoo from "../../assets/shampoon.png";
+import leaf1 from "../../assets/leaf-1.png";
+import leaf2 from "../../assets/leaf-2.png";
+import leaf3 from "../../assets/leaf-3.png";
+import leaf4 from "../../assets/leaf-4.png";
+import leaf5 from "../../assets/leaf-5.png";
+import leaf6 from "../../assets/leaf-6.png";
+import leaf7 from "../../assets/leaf-7.png";
+import leaf8 from "../../assets/leaf-8.png";
+import leaf9 from "../../assets/leaf-9.png";
+import leaf10 from "../../assets/leaf-10.png";
+
+const Hero = () => {
+  return (
+    <section className="hero">
+      <div className="container">
+        <div className="hero__content">
+          <img src={shampoo} alt="" className="hero__shampoo" />
+          <ul className="hero__leafs">
+            <li className="hero__leaf leaf--1">
+              <img src={leaf1} alt="" />
+            </li>
+            <li className="hero__leaf leaf--2">
+              <img src={leaf2} alt="" />
+            </li>
+            <li className="hero__leaf leaf--3">
+              <img src={leaf3} alt="" />
+            </li>
+            <li className="hero__leaf leaf--4">
+              <img src={leaf4} alt="" />
+            </li>
+            <li className="hero__leaf leaf--5">
+              <img src={leaf5} alt="" />
+            </li>
+            <li className="hero__leaf leaf--6">
+              <img src={leaf6} alt="" />
+            </li>
+            <li className="hero__leaf leaf--7">
+              <img src={leaf7} alt="" />
+            </li>
+            <li className="hero__leaf leaf--8">
+              <img src={leaf8} alt="" />
+            </li>
+            <li className="hero__leaf leaf--9">
+              <img src={leaf9} alt="" />
+            </li>
+            <li className="hero__leaf leaf--10">
+              <img src={leaf10} alt="" />
+            </li>
+          </ul>
+          <div className="hero__product">
+            <h1 className="hero__title">Tresemme Conditioner</h1>
+            <h3 className="hero__suptitle">
+              Naturals Nourishing Moisture 740 ml
+            </h3>
+            <p className="hero__description">
+              leafs hair looking shinier and feeling 10X stronger after just one
+              use.
+            </p>
+            <span className="hero__price">US$ 124.0</span>
+            <a href="" className="hero__btn">
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
