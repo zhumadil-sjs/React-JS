@@ -2,10 +2,12 @@
 @import "./components/global";
 body {
   margin: 0;
+  background-color: $color-white;
 }
 .container {
   max-width: vw(1230);
-  margin: 0 auto;
+  margin: vh(0) auto;
+//   box-sizing: border-box;
 }
 
 a {

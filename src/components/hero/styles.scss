@@ -2,8 +2,8 @@
 .hero {
   background: url("../../assets/hero-bg.png") no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 84vh;
+  height: 127vh;
+
   &__content {
     padding-top: vh(100);
     padding-left: vw(100);
@@ -43,21 +43,19 @@
 
   &__shampoo {
     position: absolute;
-    top: vh(320);
+    top: vh(640);
     left: 50%;
-    max-width: vh(400);
+    width: vh(254);
     transform: translateX(-50%);
-    height: vh(700);
+    height: vh(420);
   }
 
   &__leafs {
     position: relative;
-    li {
-      width: vh(250);
       img {
-        width: 100%;
+        width: vh(230);
       }
-    }
+    
   }
   &__leaf {
     position: absolute;
@@ -84,26 +82,26 @@
       left: vh(420);
     }
     &--6 {
-      bottom: vh(-220);
-      left: vh(185);
+      bottom: vh(-110);
+      left: vh(340);
     }
 
     &--7 {
-      bottom: -29px;
-      left: 184px;
+      bottom: vh(-29);
+      left: vh(184);
     }
     &--8 {
-      top: 452px;
-      left: 146px;
+      top: vh(452);
+      left: vh(146);
       z-index: -1;
     }
     &--9 {
-      top: 502px;
-      left: 412px;
+      top: vh(502);
+      left: vh(412);
     }
     &--10 {
-      top: 660px;
-      left: 448px;
+      top: vh(660);
+      left: vh(448);
     }
   }
   &__natural {
