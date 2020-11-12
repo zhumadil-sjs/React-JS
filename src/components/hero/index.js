@@ -10,6 +10,7 @@ import leaf7 from "../../assets/leaf-7.png";
 import leaf8 from "../../assets/leaf-8.png";
 import leaf9 from "../../assets/leaf-9.png";
 import leaf10 from "../../assets/leaf-10.png";
+import natural from '../../assets/natural.png';
 
 const Hero = () => {
   return (
@@ -49,8 +50,9 @@ const Hero = () => {
               <img src={leaf10} alt="" />
             </li>
           </ul>
+          <img src={natural} alt="" className="hero__natural"/>
           <div className="hero__product">
-            <h1 className="hero__title">Tresemme Conditioner</h1>
+            <h1 className="hero__title title">Tresemme Conditioner</h1>
             <h3 className="hero__suptitle">
               Naturals Nourishing Moisture 740 ml
             </h3>
@@ -59,7 +61,7 @@ const Hero = () => {
               use.
             </p>
             <span className="hero__price">US$ 124.0</span>
-            <a href="" className="hero__btn">
+            <a href="" className="hero__btn btn">
               Shop Now
             </a>
           </div>
