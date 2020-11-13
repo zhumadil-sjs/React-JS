@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "./components/global";
 body {
-  margin: 0;
-  background-color: $color-white;
+	margin: 0;
 }
 .container {
-  max-width: vw(1230);
-  margin: vh(0) auto;
-//   box-sizing: border-box;
+	max-width: vw(1230);
+	margin: 0 auto;
 }
 
 a {
-  display: inline-block;
-  text-decoration: none;
+	display: inline-block;
+	text-decoration: none;
 }
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 h1,
 h2,
@@ -24,11 +22,12 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+	margin: 0;
 }
 ul {
-  padding: 0;
+	padding: 0;
 }
+
 .btn {
 	@include font($font-baby, vh(18), 700);
 	position: relative;
@@ -62,26 +61,34 @@ ul {
 	}
 }
 
-.col-6{
+.col-6 {
 	width: 50%;
 }
-.row{
+.row {
 	display: flex;
 	flex-wrap: wrap;
 }
-.title{
+.title {
 	@include font($font-baby, vh(66), 700);
 	line-height: vh(62);
 	color: $color-green;
 }
-.subtitle{
+.subtitle {
 	@include font($font-baby, vh(26), 700);
 	line-height: vh(28);
 	color: $color-darkGreen;
 }
-.description{
+.description {
 	@include font($font-steel, vh(24));
 	letter-spacing: 2px;
 	line-height: vh(31);
 	color: $color-gray;
+}
+
+img {
+	max-width: 100%;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
