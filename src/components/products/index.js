@@ -21,7 +21,7 @@ const Products = () => {
               View All
             </a>
           </div>
-          <div className='col-6 products__item '>
+          <div className='col-6 products__item'>
             <img src={productImg} alt='' className='products__item__img' />
             <h2 className='products__item__title title'>All Avena Orgin Naturals Product</h2>
             <h3 className='products__item__subtitle subtitle'>Electric c Capsules</h3>
@@ -42,5 +42,4 @@ const Products = () => {
     </section>
   );
 };
-
 export default Products
