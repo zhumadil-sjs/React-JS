@@ -1,4 +1,3 @@
-  
 import productImg from '../../assets/productflower.png';
 
 function ProductItem(props) {
