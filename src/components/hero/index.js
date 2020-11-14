@@ -6,10 +6,10 @@ import leaf3 from "../../assets/leaf-3.png";
 import leaf4 from "../../assets/leaf-4.png";
 import leaf5 from "../../assets/leaf-5.png";
 import leaf6 from "../../assets/leaf-6.png";
-import leaf7 from "../../assets/leaf-7.png";
-import leaf8 from "../../assets/leaf-8.png";
-import leaf9 from "../../assets/leaf-9.png";
-import leaf10 from "../../assets/leaf-10.png";
+// import leaf7 from "../../assets/leaf-7.png";
+// import leaf8 from "../../assets/leaf-8.png";
+// import leaf9 from "../../assets/leaf-9.png";
+// import leaf10 from "../../assets/leaf-10.png";
 import natural from '../../assets/natural.png';
 
 const Hero = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
             <li className="hero__leaf leaf--6">
               <img src={leaf6} alt="" />
             </li>
-            <li className="hero__leaf leaf--7">
+            {/* <li className="hero__leaf leaf--7">
               <img src={leaf7} alt="" />
             </li>
             <li className="hero__leaf leaf--8">
@@ -48,7 +48,7 @@ const Hero = () => {
             </li>
             <li className="hero__leaf leaf--10">
               <img src={leaf10} alt="" />
-            </li>
+            </li> */}
           </ul>
           <img src={natural} alt="" className="hero__natural"/>
           <div className="hero__product">
