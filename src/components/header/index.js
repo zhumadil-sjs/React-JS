@@ -42,9 +42,9 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav__item">
-                <a href="" className="nav__link">
+                <Link to="/video" className="nav__link">
                   Men Product
-                </a>
+                </Link>
               </li>
               <li className="nav__item">
                 <a href="" className="nav__link">

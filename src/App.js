@@ -16,6 +16,7 @@ const App = () => {
       <Route exact path='/' component={Hero} />
       <Route exact path='/products' component={Products} />
       <Route exact path='/aiza' component={Example} />
+      <Route exact path='/video' component={Video} />
     </div>
   );
 };
