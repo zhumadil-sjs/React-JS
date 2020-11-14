@@ -10,7 +10,7 @@ import leaf6 from "../../assets/leaf-6.png";
 // import leaf8 from "../../assets/leaf-8.png";
 // import leaf9 from "../../assets/leaf-9.png";
 // import leaf10 from "../../assets/leaf-10.png";
-import natural from '../../assets/natural.png';
+import natural from "../../assets/natural.png";
 
 const Hero = () => {
   return (
@@ -50,7 +50,7 @@ const Hero = () => {
               <img src={leaf10} alt="" />
             </li> */}
           </ul>
-          <img src={natural} alt="" className="hero__natural"/>
+          <img src={natural} alt="" className="hero__natural" />
           <div className="hero__product">
             <h1 className="hero__title title">Tresemme Conditioner</h1>
             <h3 className="hero__suptitle">
