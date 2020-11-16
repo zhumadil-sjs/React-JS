@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import leaf from '../../assets/leaf-8.png';
+import arrow from '../../assets/arrow-right.svg';
 
 const Subscribe = () => {
     return (
@@ -11,7 +12,9 @@ const Subscribe = () => {
                         <h2 className='subscribe__title title'>Subscribe to our newsletter</h2>
                         <p className='subscribe__subtitle subtitle'>Send me your email address</p>
                         <p className='subscribe__description description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-                        <input placeholder='YOUR EMAIL' className='subscribe__input'></input>
+                        <div className="subscribe__link">
+                            <input placeholder='YOUR EMAIL' className='subscribe__input'>   <a href="#" className="subscribe__btn"> <img src={arrow} className="subscribe__btn--img"/> </a></input>
+                            </div>
                     </div>
                     <div className='col-6'>
                         <div className='subscribe__square'>
