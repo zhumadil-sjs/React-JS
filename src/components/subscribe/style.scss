@@ -1,0 +1,44 @@
+@import "../global";
+
+.subscribe {
+    &__content {
+        margin: 0 85px;
+    }
+    &__description {
+        padding: 30px 0 50px 0;
+        max-width: 280px;
+    }
+    &__title {
+        padding-top: 170px;
+        max-width: 370px;
+    }
+    &__input {
+        position: relative;
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 401px;
+        height: 56px;
+        background-color: #ffffff;
+        border: 1px solid #408b04;
+        outline: none;
+        &::placeholder {
+            font-size: 19px;
+            letter-spacing: 9px;
+            line-height: 26px;
+            color: #808080;
+            font-family: "Bebas Neue";
+        }
+    }
+    &__square {
+        position: relative;
+        margin-top: 60px;
+        width: 500px;
+        height: 532px;
+        background-color: #408b04;
+    }
+    &__decor {
+        position: absolute;
+        bottom: -55px;
+        left: -18px;
+    }
+}
