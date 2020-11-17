@@ -61,14 +61,14 @@
       &:hover {
         content: "";
         cursor: pointer;
-
+    color: $color-green;
       }
     }
-    &__link{
-        margin-right: vh(15);
-        &:last-child {
-            margin-right: 0;
-          }
+    &__link {
+      margin-right: vh(15);
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 
@@ -80,9 +80,9 @@
       width: vh(70);
       height: vh(70);
       margin: 0 vh(20) vh(20) 0;
-)
-    &__row {
-      margin-top: vh(29);
+      &__row {
+        margin-top: vh(29);
+      }
     }
   }
 }
