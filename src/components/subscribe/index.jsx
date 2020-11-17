@@ -13,7 +13,8 @@ const Subscribe = () => {
                         <p className='subscribe__subtitle subtitle'>Send me your email address</p>
                         <p className='subscribe__description description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
                         <div className="subscribe__link">
-                            <input placeholder='YOUR EMAIL' className='subscribe__input'>   <a href="#" className="subscribe__btn"> <img src={arrow} className="subscribe__btn--img"/> </a></input>
+                            <input placeholder='YOUR EMAIL' className='subscribe__input'></input>
+                            <a href="#" className="subscribe__btn"> <img src={arrow} className="subscribe__btn--img"/> </a>
                             </div>
                     </div>
                     <div className='col-6'>
