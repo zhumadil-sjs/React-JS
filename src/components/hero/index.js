@@ -6,10 +6,6 @@ import leaf3 from "../../assets/leaf-3.png";
 import leaf4 from "../../assets/leaf-4.png";
 import leaf5 from "../../assets/leaf-5.png";
 import leaf6 from "../../assets/leaf-6.png";
-// import leaf7 from "../../assets/leaf-7.png";
-// import leaf8 from "../../assets/leaf-8.png";
-// import leaf9 from "../../assets/leaf-9.png";
-// import leaf10 from "../../assets/leaf-10.png";
 import natural from "../../assets/natural.png";
 
 const Hero = () => {

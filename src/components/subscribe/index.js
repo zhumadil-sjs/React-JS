@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.scss';
 import leaf from '../../assets/leaf-8.png';
 import arrow from '../../assets/arrow-right.svg';
