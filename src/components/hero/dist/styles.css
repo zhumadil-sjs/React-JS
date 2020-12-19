@@ -1,0 +1,92 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "SteelfishRg-Regular";
+  src: url("./fonts/steelfish_rg.eot?") format("eot"), url("./fonts/steelfish_rg.woff") format("woff"), url("./fonts/steelfish_rg.ttf") format("truetype"), url("./fonts/steelfish_rg.svg#SteelfishRg-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.hero {
+  background: url("../../assets/hero-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 84vh;
+}
+.hero__content {
+  padding-top: 9.765625vh;
+  padding-left: 7.1428571429vw;
+}
+.hero__product {
+  display: flex;
+  flex-direction: column;
+  padding: 9.765625vh 4.8828125vh 5.859375vh 2.9296875vh;
+  max-width: 39.0625vh;
+  background-color: #fff;
+}
+.hero__title {
+  font-family: "Bebas Neue";
+  font-size: 6.4453125vh;
+  font-weight: 700;
+  line-height: 6.0546875vh;
+  color: #408b04;
+}
+.hero__suptitle {
+  font-family: "Bebas Neue";
+  font-size: 2.5390625vh;
+  font-weight: 700;
+  line-height: 2.734375vh;
+  color: #2c3205;
+}
+.hero__description {
+  font-family: "SteelfishRg-Regular";
+  font-size: 2.34375vh;
+  font-weight: 400;
+  margin: 1.953125vh 0;
+  letter-spacing: 2px;
+  line-height: 3.02734375vh;
+  color: #808080;
+}
+.hero__price {
+  font-family: "SteelfishRg-Regular";
+  font-size: 4.4921875vh;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #2c3205;
+}
+.hero__btn {
+  margin-top: 2.9296875vh;
+}
+.hero__shampoo {
+  position: absolute;
+  top: 31.25vh;
+  left: 50%;
+  max-width: 39.0625vh;
+  transform: translateX(-50%);
+  height: 68.359375vh;
+  animation: floatShampoo 3s infinite ease-in-out;
+}
+.hero__natural {
+  position: absolute;
+  right: 7.1428571429vw;
+  top: 7.1428571429vw;
+  width: 35.7142857143vw;
+}
+
+@media screen and (max-width: 576px) {
+  .hero__content {
+    padding-top: 100vh;
+  }
+  .hero__natural {
+    display: none;
+  }
+}
+@keyframes floatShampoo {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-20px);
+  }
+}

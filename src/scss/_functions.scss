@@ -4,4 +4,4 @@
 
 @function vw($value, $viewport: 1400) {
 	@return $value / $viewport * 100vw;
-} 
+}

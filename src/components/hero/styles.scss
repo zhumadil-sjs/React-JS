@@ -40,7 +40,6 @@
   &__btn {
     margin-top: vh(30);
   }
-
   &__shampoo {
     position: absolute;
     top: vh(320);
@@ -48,50 +47,36 @@
     max-width: vh(400);
     transform: translateX(-50%);
     height: vh(700);
+    animation: floatShampoo 3s infinite ease-in-out;
   }
 
-  &__leafs {
-    position: relative;
-    li {
-      width: vh(250);
-      img {
-        width: 100%;
-      }
-    }
-  }
-  &__leaf {
-    position: absolute;
-  }
-  .leaf {
-    &--1 {
-      bottom: vh(-320);
-      right: 0;
-    }
-    &--2 {
-      bottom: vh(-520);
-      left: vh(-100);
-    }
-    &--3 {
-      bottom: vh(-520);
-      left: vh(-100);
-    }
-    &--4 {
-      bottom: vh(-520);
-      left: vh(-100);
-    }
-    &--5 {
-      bottom: vh(-520);
-      left: vh(420);
-    }
-    &--6 {
-      bottom: vh(-220);
-      left: vh(185);
-    }
-  }
   &__natural {
     position: absolute;
     right: vw(100);
     top: vw(100);
     width: vw(500);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    &__content {
+      padding-top: 100vh;
+    }
+    &__natural {
+      display: none;
+    }
+  }
+}
+
+@keyframes floatShampoo {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-20px);
   }
 }

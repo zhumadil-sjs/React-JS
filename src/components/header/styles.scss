@@ -22,6 +22,7 @@
     color: #408b04;
     font-weight: 700;
     font-family: "Bebas Neue";
+    cursor: pointer;
   }
 }
 
@@ -64,6 +65,14 @@
         opacity: 1;
         width: 174%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    &__bottom {
+      display: none;
     }
   }
 }

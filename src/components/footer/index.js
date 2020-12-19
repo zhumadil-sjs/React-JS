@@ -6,7 +6,7 @@ import behance from "../../assets/behance.svg";
 import dribbble from "../../assets/dribbble.svg";
 import footerleafe from "../../assets/footer-leafe.png";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
       <img src={footerleafe} className="footer__leafe-1"></img>
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="footer__left row">
             <div className="footer__column">
               <h6 className="footer__title">Shop</h6>
-              <ul className="footer__menu">
+              <ul>
                 <li><a href="#" className="footer__column__link">New In</a></li>
                 <li><a href="#" className="footer__column__link">Women product</a></li>
                 <li><a href="#" className="footer__column__link">Men Product</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div className="footer__column">
               <h6 className="footer__title">Information</h6>
-              <ul className="footer__menu">
+              <ul>
                 <li><a href="#" className="footer__column__link">About us</a></li>
                 <li><a href="#" className="footer__column__link">Customers</a></li>
                 <li><a href="#" className="footer__column__link">Service</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             <div className="footer__column">
               <h6 className="footer__title">Legal</h6>
-              <ul className="footer__menu">
+              <ul>
                 <li><a href="#" className="footer__column__link">Manufacturers</a></li>
                 <li><a href="#" className="footer__column__link">Privacy Policy</a></li>
                 <li><a href="#" className="footer__column__link">Terms & Condition</a></li>
@@ -52,10 +52,10 @@ const Footer = () => {
             <div className="footer__social">
               <h6 className="footer__title">Follow Us</h6>
               <div className="footer__social__row">
-                <a href="#" className="footer__social--link"><img src={facebook} className="footer__social__img"/></a>
-                <a href="#" className="footer__social--link"><img src={twitter}className="footer__social__img"/></a>
-                <a href="#" className="footer__social--link"><img src={dribbble} className="footer__social__img"/></a>
-                <a href="#" className="footer__social--link"><img src={behance}className="footer__social__img"/></a>
+                <img src={facebook} className="footer__social__img"/>
+                <img src={twitter}className="footer__social__img"/>
+                <img src={dribbble} className="footer__social__img"/>
+                <img src={behance}className="footer__social__img"/>
               </div >
 
             </div>
@@ -71,6 +71,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
       

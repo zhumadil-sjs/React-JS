@@ -1,0 +1,77 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "SteelfishRg-Regular";
+  src: url("./fonts/steelfish_rg.eot?") format("eot"), url("./fonts/steelfish_rg.woff") format("woff"), url("./fonts/steelfish_rg.ttf") format("truetype"), url("./fonts/steelfish_rg.svg#SteelfishRg-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  padding-top: 1.953125vh;
+}
+.header img {
+  max-width: 2.34375vh;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__cart, .header__phone {
+  margin-right: 1.66015625vh;
+}
+
+.logo__link {
+  font-size: 4.4921875vh;
+  letter-spacing: 5px;
+  color: #408b04;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  cursor: pointer;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: center;
+}
+.nav__item {
+  margin-right: 0.9765625vh;
+}
+.nav__item:last-child {
+  margin: 0;
+}
+.nav__link {
+  position: relative;
+  font-size: 2.1484375vh;
+  letter-spacing: 2px;
+  color: #808080;
+  font-weight: 400;
+  font-family: "Bebas Neue";
+  overflow: hidden;
+  padding: 0 1.953125vh;
+}
+.nav__link::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 0;
+  height: 2px;
+  background-color: #408b04;
+  transform: translateX(-25%) translateY(-50%);
+  transition: 0.5s;
+  z-index: 1;
+}
+.nav__link:hover {
+  color: #408b04;
+}
+.nav__link:hover::before {
+  opacity: 1;
+  width: 174%;
+}
+
+@media screen and (max-width: 576px) {
+  .header__bottom {
+    display: none;
+  }
+}

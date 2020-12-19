@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "./components/global";
 body {
-  margin: 0;
+	margin: 0;
 }
 .container {
-  max-width: vw(1230);
-  margin: 0 auto;
+	max-width: vw(1230);
+	margin: 0 auto;
 }
 
 a {
-  display: inline-block;
-  text-decoration: none;
+	display: inline-block;
+	text-decoration: none;
 }
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 h1,
 h2,
@@ -22,73 +22,102 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+	margin: 0;
 }
 ul {
-  padding: 0;
+	padding: 0;
 }
 
 .btn {
-  @include font($font-baby, vh(18), 700);
-  position: relative;
-  align-self: flex-start;
-  background-color: $color-green;
-  padding: vh(20) vh(50) vh(20) vh(30);
-  color: $color-white;
-  letter-spacing: 9px;
-  border: 2px solid transparent;
-  transition: 0.3s;
-  &::before {
-    content: "";
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border-top: vh(6) solid transparent;
-    border-left: vh(12) solid $color-white;
-    border-bottom: vh(6) solid transparent;
-    transform: translateY(-50%);
-    transition: 0.3s;
-  }
-  &:hover {
-    border-color: $color-green;
-    background-color: $color-white;
-    color: $color-green;
-    &::before {
-      border-left: vh(12) solid $color-green;
-    }
-  }
+	@include font($font-baby, vh(18), 700);
+	position: relative;
+	align-self: flex-start;
+	background-color: $color-green;
+	padding: vh(20) vh(50) vh(20) vh(30);
+	color: $color-white;
+	letter-spacing: 9px;
+	border: 2px solid transparent;
+	transition: 0.3s;
+	&::before {
+		content: "";
+		position: absolute;
+		right: 10%;
+		top: 50%;
+		width: 0;
+		height: 0;
+		border-top: vh(6) solid transparent;
+		border-left: vh(12) solid $color-white;
+		border-bottom: vh(6) solid transparent;
+		transform: translateY(-50%);
+		transition: 0.3s;
+	}
+	&:hover {
+		border-color: $color-green;
+		background-color: $color-white;
+		color: $color-green;
+		&::before {
+			border-left: vh(12) solid $color-green;
+		}
+	}
 }
-
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
 .col-6 {
-  width: 50%;
+	width: 50%;
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 .title {
-  @include font($font-baby, vh(66), 700);
-  line-height: vh(62);
-  color: $color-green;
+	@include font($font-baby, vh(66), 700);
+	line-height: vh(62);
+	color: $color-green;
 }
 .subtitle {
-  @include font($font-baby, vh(26), 700);
-  line-height: vh(28);
-  color: $color-darkGreen;
+	@include font($font-baby, vh(26), 700);
+	line-height: vh(28);
+	color: $color-darkGreen;
 }
 .description {
-  @include font($font-steel, vh(24));
-  letter-spacing: 2px;
-  line-height: vh(31);
-  color: $color-gray;
+	@include font($font-steel, vh(24));
+	letter-spacing: 2px;
+	line-height: vh(31);
+	color: $color-gray;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
+}
+
+@media screen and (max-width: 576px) {
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 100%;
+	}
 }

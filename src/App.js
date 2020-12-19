@@ -1,26 +1,25 @@
-import { Route, Router } from "react-router-dom";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Products from "./components/products";
-import Example from "./components/footer";
-import Video from "./components/video";
-import Subscribe from "./components/subscribe";
-import Footer from "./components/footer";
-import "./base.scss";
+import React from 'react';
+import { Route, Router } from 'react-router-dom';
+import Header from './components/header';
+import Hero from './components/hero';
+import Products from './components/products';
+import video from './components/video';
+import subscribe from './components/subscribe';
+import footer from './components/footer';
+import './base.scss';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className='App' data-barba="container">
       <Header />
       {/* <Header />
       <Hero />
       <Products /> */}
-      <Route exact path="/" component={Hero} />
-      <Route exact path="/products" component={Products} />
-      <Route exact path="/aiza" component={Example} />
-      <Route exact path="/video" component={Video} />
-      <Route exact path="/subscribe" component={Subscribe} />
-      <Route exact path="/footer" component={Footer} />
+      <Route exact path='/' component={Hero} />
+      <Route exact path='/products' component={Products} />
+      <Route exact path='/video' component={video} />
+      <Route exact path='/subscribe' component={subscribe} />
+      <Route exact path='/footer' component={footer} />
     </div>
   );
 };
